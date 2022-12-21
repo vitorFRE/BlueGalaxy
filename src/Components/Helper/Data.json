@@ -1,0 +1,24 @@
+{
+  "perguntas_frequentes": [
+    {
+      "pergunta": "Quais são os serviços oferecidos pela empresa?",
+      "resposta": "Os serviços oferecidos pela nossa empresa incluem limpeza geral, manutenção de equipamentos, tratamento de água e reparos. Também oferecemos serviços de limpeza de áreas externas, como decks e áreas ao redor da piscina."
+    },
+    {
+      "pergunta": "Qual é o valor dos serviços de limpeza e manutenção de piscinas?",
+      "resposta": "O valor dos serviços de limpeza e manutenção de piscinas varia de acordo com o tamanho e o tipo de piscina, bem como a frequência de serviços. Entre em contato conosco para mais informações e um orçamento personalizado."
+    },
+    {
+      "pergunta": "A empresa faz reparos em equipamentos de piscinas?",
+      "resposta": "Sim, a nossa empresa oferece serviços de reparo em equipamentos de piscinas, incluindo bombas, filtros, aquecedores e outros equipamentos."
+    },
+    {
+      "pergunta": "Qual é o processo para agendar um serviço com a empresa?",
+      "resposta": "Para agendar um serviço com a nossa empresa, basta entrar em contato conosco através do formulário de contato no nosso site ou pelo telefone. Um de nossos atendentes entrará em contato com você para confirmar a data e horário do serviço."
+    },
+    {
+      "pergunta": "A empresa trabalha com piscinas residenciais e comerciais?",
+      "resposta": "Sim, a nossa empresa trabalha com piscinas residenciais e comerciais. Oferecemos serviços de limpeza e manutenção para todos os tipos e tamanhos de piscinas."
+    }
+  ]
+}
