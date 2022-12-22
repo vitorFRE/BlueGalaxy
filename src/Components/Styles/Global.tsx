@@ -4,6 +4,11 @@ import BG from '../../assets/BG.svg';
 import { device } from './BreakPoints';
 
 const Global = createGlobalStyle`
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
 //Reset 
 * {
   box-sizing: border-box;
@@ -54,7 +59,7 @@ img {
 }
 
 // Typografia
-h1 {
+.h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -62,7 +67,7 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
+.h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -70,7 +75,7 @@ h2 {
   font-size: 2.5rem;
 }
 
-h3 {
+.h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -78,7 +83,7 @@ h3 {
   font-size: 2rem;
 }
 
-h4 {
+.h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -86,7 +91,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-h5 {
+.h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -94,7 +99,7 @@ h5 {
   font-size: 1.25rem;
 }
 
-h6 {
+.h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -102,7 +107,7 @@ h6 {
   font-size: 1rem;
 }
 
-p {
+.b {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -111,23 +116,22 @@ p {
 }
 
 @media ${device.md} {
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.25rem; }
-  h3 { font-size: 1rem; }
-  h4 { font-size: 0.8rem; }
-  h5 { font-size: 0.7rem; }
-  h6 { font-size: 0.6rem; }
-  p { font-size: 0.7rem; }
+  .h1 { font-size: 1.5rem; }
+  .h2 { font-size: 1.25rem; }
+  .h3 { font-size: 1rem; }
+  .h4 { font-size: 0.8rem; }
+  .h5 { font-size: 0.7rem; }
+  .h6 { font-size: 0.6rem; }
+  .b { font-size: 0.7rem; }
 }
 
 @media ${device.sm} {
-  h1 { font-size: 1.25rem; }
-  h2 { font-size: 1rem; }
-  h3 { font-size: 0.8rem; }
-  h4 { font-size: 0.7rem; }
-  h5 { font-size: 0.6rem; }
-  h6 { font-size: 0.5rem; }
-  p { font-size: 0.6rem; }
+  .h1 { font-size: 1.25rem; }
+  .h2 { font-size: 1rem; }
+  .h3 { font-size: 0.8rem; }
+  .h4 { font-size: 0.7rem; }
+  .h5 { font-size: 0.6rem; }
+  .h6 { font-size: 0.5rem; }
 }
 `;
 
