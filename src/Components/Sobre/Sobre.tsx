@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../Styles/BreakPoints';
+import { Image } from '../Utils/Image';
 import { Title } from '../Utils/Title';
 
 export const Sobre = () => {
@@ -8,8 +9,12 @@ export const Sobre = () => {
     <Container id="sobre">
       <Title T1="Um pouco" T2="Sobre-Nós" />
       <Content>
-        <div>
-          <img src="https://images.unsplash.com/photo-1591285713698-598d587de63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" />
+        <Slide_1>
+          <Image
+            source="https://images.unsplash.com/photo-1591285713698-598d587de63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            alt="Foto de uma boia em uma piscina"
+          />
+
           <p className="b">
             Nossa empresa se destaca por oferecer serviços de qualidade e
             atendimento personalizado aos nossos clientes. Contamos com uma
@@ -20,8 +25,8 @@ export const Sobre = () => {
             resultados excepcionais. Escolha a nossa empresa e tenha a
             tranquilidade de saber que sua piscina está em boas mãos.
           </p>
-        </div>
-        <div>
+        </Slide_1>
+        <Slide_2>
           <p className="b">
             Transforme o seu quintal em um oásis de lazer e descanso. Com a
             nossa ajuda, você pode ter a piscina dos seus sonhos e desfrutar de
@@ -34,7 +39,7 @@ export const Sobre = () => {
           </p>
 
           <img src="https://images.unsplash.com/photo-1518633639997-bb443620d547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1369&q=80" />
-        </div>
+        </Slide_2>
       </Content>
     </Container>
   );
@@ -50,6 +55,7 @@ const Container = styled.section`
 
 const Content = styled.div`
   margin-top: 30px;
+
   img {
     width: 100%;
     height: 365px;
@@ -61,26 +67,28 @@ const Content = styled.div`
     display: grid;
     align-items: center;
     gap: 30px;
-    &:first-child {
-      grid-template-columns: 1.3fr 1fr;
-      margin-bottom: 60px;
-
-      @media ${device.sm} {
-        margin-bottom: 30px;
-        grid-template-columns: 1fr;
-      }
-    }
-    &:last-child {
-      grid-template-columns: 1fr 1.3fr;
-      @media ${device.sm} {
-        p {
-          color: ${({ theme }) => theme.colors.Grey};
-        }
-      }
-    }
 
     @media ${device.sm} {
       align-items: top;
+    }
+  }
+`;
+
+const Slide_1 = styled.div`
+  grid-template-columns: 1.3fr 1fr;
+  margin-bottom: 60px;
+
+  @media ${device.sm} {
+    margin-bottom: 30px;
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Slide_2 = styled.div`
+  grid-template-columns: 1fr 1.3fr;
+  @media ${device.sm} {
+    p {
+      color: ${({ theme }) => theme.colors.Grey};
     }
   }
 `;

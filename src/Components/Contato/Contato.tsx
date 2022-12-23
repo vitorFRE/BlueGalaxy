@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../Styles/BreakPoints';
+import { Image } from '../Utils/Image';
 import { Title } from '../Utils/Title';
 
 export const Contato = () => {
@@ -10,9 +11,9 @@ export const Contato = () => {
 
       <ContatoContainer>
         <ImgContainer>
-          <img
-            src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80"
-            alt="Boia em uma piscina"
+          <Image
+            source="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80"
+            alt="Boia em formato de um flamingo em uma piscina"
           />
         </ImgContainer>
         <FormContainer>
@@ -63,6 +64,9 @@ const ContatoContainer = styled.div`
 `;
 
 const ImgContainer = styled.div`
+  div {
+    height: 100%;
+  }
   img {
     border-radius: 5px 0 0 5px;
     height: 100%;
