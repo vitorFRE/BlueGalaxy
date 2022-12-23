@@ -5,7 +5,7 @@ import { Title } from '../Utils/Title';
 
 export const Sobre = () => {
   return (
-    <Container>
+    <Container id="sobre">
       <Title T1="Um pouco" T2="Sobre-Nós" />
       <Content>
         <div>

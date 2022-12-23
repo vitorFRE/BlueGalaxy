@@ -4,7 +4,7 @@ import { device } from '../Styles/BreakPoints';
 
 export const Banner = () => {
   return (
-    <Container>
+    <Container id="inicio">
       <BannerText>
         <h1 className="h1">Blue Galaxy</h1>
         <p className="b">
@@ -12,7 +12,7 @@ export const Banner = () => {
           treinada. Serviços de qualidade. Entre em contato para mais
           informações.
         </p>
-        <a href="/">
+        <a href="#contato">
           <button className="h6">FALE COM A GENTE</button>
         </a>
       </BannerText>
