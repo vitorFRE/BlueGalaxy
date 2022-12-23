@@ -63,7 +63,10 @@ const BannerText = styled.div`
     padding: 10px;
     border: none;
     background: #ffa07a;
-    border-radius: 20px;
+    border-radius: 5px;
+    &:hover {
+      background: #eb865e;
+    }
   }
 `;
 
