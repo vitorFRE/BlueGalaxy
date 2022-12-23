@@ -22,7 +22,6 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height:6000px;
 }
 a {
   text-decoration: none;

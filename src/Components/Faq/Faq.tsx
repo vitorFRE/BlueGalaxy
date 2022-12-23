@@ -17,7 +17,7 @@ export const Faq = () => {
   };
 
   return (
-    <Container>
+    <Container id="faq">
       <Title T1="Perguntas" T2="frequentes" />
       <Accordion>
         {Data.perguntas_frequentes.map((item, i) => (

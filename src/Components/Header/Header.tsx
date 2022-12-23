@@ -19,13 +19,13 @@ export const Header = () => {
 
         <ul style={{ display: menu ? 'flex' : '' }} className="b">
           <li>
-            <a href="/">Início</a>
+            <a href="#inicio">Início</a>
           </li>
           <li>
-            <a href="/">FAQs</a>
+            <a href="#faq">FAQs</a>
           </li>
           <li>
-            <a href="/">Clientes</a>
+            <a href="#sobre">Sobre</a>
           </li>
         </ul>
       </Nav>

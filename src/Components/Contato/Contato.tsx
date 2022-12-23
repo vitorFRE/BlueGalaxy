@@ -5,7 +5,7 @@ import { Title } from '../Utils/Title';
 
 export const Contato = () => {
   return (
-    <Container>
+    <Container id="contato">
       <Title T1="Fale" T2="conosco" />
 
       <ContatoContainer>
