@@ -83,6 +83,9 @@ const Nav = styled.nav`
       li {
         padding-bottom: 5px;
         border-bottom: 3px solid ${({ theme }) => theme.colors.Primary};
+        &:last-child {
+          margin-bottom: 20px;
+        }
       }
     }
     li {
@@ -92,9 +95,6 @@ const Nav = styled.nav`
       }
       &:first-child {
         border-bottom: 3px solid ${({ theme }) => theme.colors.Primary};
-      }
-      &:last-child {
-        margin-bottom: 20px;
       }
     }
   }

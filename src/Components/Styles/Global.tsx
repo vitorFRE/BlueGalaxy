@@ -22,6 +22,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  height:6000px;
 }
 a {
   text-decoration: none;
@@ -54,7 +55,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0496FF;
+  background-color: #87CEEB;
   border-radius: 5px;
 }
 
