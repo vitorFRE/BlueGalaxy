@@ -10,6 +10,14 @@ const ButtonStyles = styled.button`
   cursor: pointer;
 
   &.open {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: ${({ theme }) => theme.colors.Primary};
+  }
+
+  &.open::before {
+    content: 'Fechar';
   }
 
   &.closed {

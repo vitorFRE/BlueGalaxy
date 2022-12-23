@@ -68,12 +68,17 @@ const Nav = styled.nav`
       width: 30%;
       top: 0px;
       right: 0px;
-      height: 50%;
+      height: max-content;
       flex-direction: column;
       gap: 20px;
-      padding-top: 60px;
+      padding-top: 70px;
       display: none;
       z-index: 800;
+      padding-left: 1rem;
+      background: rgba(135, 206, 235, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
 
       li {
         padding-bottom: 5px;
@@ -87,6 +92,9 @@ const Nav = styled.nav`
       }
       &:first-child {
         border-bottom: 3px solid ${({ theme }) => theme.colors.Primary};
+      }
+      &:last-child {
+        margin-bottom: 20px;
       }
     }
   }
