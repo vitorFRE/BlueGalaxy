@@ -4,6 +4,7 @@ import { Title } from '../Utils/Title';
 import Data from '../Helper/Data.json';
 import menos from '../../assets/menos.svg';
 import mais from '../../assets/mais.svg';
+import { motion } from 'framer-motion';
 
 export const Faq = () => {
   const [active, setActive] = useState<number | null>(0);
@@ -17,7 +18,12 @@ export const Faq = () => {
   };
 
   return (
-    <Container id="faq">
+    <Container
+      id="faq"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5 }}
+    >
       <Title T1="Perguntas" T2="frequentes" />
       <Accordion>
         {Data.perguntas_frequentes.map((item, i) => (
@@ -46,12 +52,13 @@ export const Faq = () => {
   );
 };
 
-const Container = styled.section`
+const Container = styled(motion.section)`
   max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
 
   margin-top: 50px;
+  overflow-y: hidden;
 `;
 
 const Accordion = styled.div`
