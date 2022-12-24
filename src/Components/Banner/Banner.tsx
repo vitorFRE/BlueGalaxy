@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../Styles/BreakPoints';
 import { Image } from '../Utils/Image';
+import { motion } from 'framer-motion';
 
 export const Banner = () => {
   return (
     <Container id="inicio">
-      <BannerText>
+      <BannerText
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ ease: 'linear', duration: 0.8 }}
+      >
         <h1 className="h1">Blue Galaxy</h1>
         <p className="b">
           Limpeza de piscinas residenciais e comerciais. Equipe altamente
@@ -17,7 +22,11 @@ export const Banner = () => {
           <button className="h6">FALE COM A GENTE</button>
         </a>
       </BannerText>
-      <BannerImg>
+      <BannerImg
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ ease: 'linear', duration: 1 }}
+      >
         <Image
           source="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
           alt="Foto de uma piscina"
@@ -47,7 +56,7 @@ const Container = styled.main`
   }
 `;
 
-const BannerText = styled.div`
+const BannerText = styled(motion.div)`
   p {
     color: ${({ theme }) => theme.colors.Grey};
     margin-bottom: 30px;
@@ -71,7 +80,7 @@ const BannerText = styled.div`
   }
 `;
 
-const BannerImg = styled.div`
+const BannerImg = styled(motion.div)`
   display: flex;
   gap: 35px;
   justify-content: flex-end;

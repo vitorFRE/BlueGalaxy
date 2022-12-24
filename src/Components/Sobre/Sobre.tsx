@@ -3,10 +3,16 @@ import styled from 'styled-components';
 import { device } from '../Styles/BreakPoints';
 import { Image } from '../Utils/Image';
 import { Title } from '../Utils/Title';
+import { motion } from 'framer-motion';
 
 export const Sobre = () => {
   return (
-    <Container id="sobre">
+    <Container
+      id="sobre"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5 }}
+    >
       <Title T1="Um pouco" T2="Sobre-Nós" />
       <Content>
         <Slide_1>
@@ -45,7 +51,7 @@ export const Sobre = () => {
   );
 };
 
-const Container = styled.section`
+const Container = styled(motion.section)`
   max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
